@@ -8,3 +8,6 @@ function command_not_found_handler {
   return 127
 }
 
+alias copy="clip"
+alias paste='echo $(powershell.exe -C Get-Clipboard) | clip.exe'
+
