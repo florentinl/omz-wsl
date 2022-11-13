@@ -9,5 +9,5 @@ function command_not_found_handler {
 }
 
 alias copy="clip"
-alias paste='echo $(powershell.exe -C Get-Clipboard) | clip.exe'
+alias paste='powershell.exe -noprofile -C Get-Clipboard'
 
