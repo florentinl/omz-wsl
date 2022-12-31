@@ -1,3 +1,5 @@
+export BROWSER=explorer.exe
+
 function command_not_found_handler {
   for ext in ${(s:;:)${PATHEXT-".com;.exe;.bat;.cmd;.vbs;.vbe;.js;.jse;.wsf;.wsh;.msc"}}; do
     if (( $+commands[$1$ext] )); then
